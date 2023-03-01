@@ -28,7 +28,8 @@ public class PlayAnMP3 extends Application {
   @Override
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
-    String path = "songfiles/Capture.mp3";
+    // Had to change file path due to incorrect path on input. Also changed media file
+    String path = "MediaFX/songfiles/SwingCheese.mp3";
     pane.setCenter( new Label(path));
     playASong(path);
     // Put the pane in a sized Scene and show the GUI
